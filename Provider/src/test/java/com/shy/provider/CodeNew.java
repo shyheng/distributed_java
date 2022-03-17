@@ -18,8 +18,7 @@ public class CodeNew {
     public static void main(String[] args) {
         Map<OutputFile, String> pathInfo = new HashMap<>();
         pathInfo.put(OutputFile.mapper, "E:\\Distributed\\Provider\\src\\main\\java\\com\\shy\\provider\\mapper");
-        pathInfo.put(OutputFile.entity, "E:" +
-                "\\Distributed\\Interface\\src\\main\\java\\com\\shy\\model");
+        pathInfo.put(OutputFile.entity, "E:" + "\\Distributed\\Interface\\src\\main\\java\\com\\shy\\model");
         pathInfo.put(OutputFile.service, "E:\\Distributed\\Interface\\src\\main\\java\\com\\shy\\service");
         pathInfo.put(OutputFile.serviceImpl, "E:\\Distributed\\Provider\\src\\main\\java\\com\\shy\\provider\\serviceImpl");
         pathInfo.put(OutputFile.controller, "E:\\Distributed\\Consumer\\src\\main\\java\\com\\shy\\consumer\\controller");

@@ -1,10 +1,10 @@
-package com.shy.model;
+package com.shy.provider.model;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+
+import java.io.Serializable;
 
 /**
  * <p>
@@ -16,6 +16,16 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(value = "User对象", description = "")
 public class User implements Serializable {
+
+    public User() {
+    }
+
+    public User(Integer id, String name, String pass, Integer del) {
+        this.id = id;
+        this.name = name;
+        this.pass = pass;
+        this.del = del;
+    }
 
     private static final long serialVersionUID = 1L;
 

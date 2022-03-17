@@ -1,7 +1,8 @@
 package com.shy.provider.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.shy.model.User;
+
+import com.shy.provider.model.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @MapperScan(basePackages = "com.shy.provider.mapper")
 @Log4j2
-@EnableDubbo(scanBasePackages = {"com.shy.provider.serviceImpl"})
+@EnableDubbo
 public class ProviderApplication {
 
     public static void main(String[] args) {
