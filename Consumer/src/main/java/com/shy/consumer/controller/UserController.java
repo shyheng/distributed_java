@@ -15,7 +15,7 @@ import java.util.List;
  * @author shyheng
  * @since 2022-03-15
  */
-@RestController
+//@RestController
 public class UserController {
 //    @DubboReference(interfaceClass = IUserService.class, check = true, timeout = 15000)
 //    private IUserService iUserService;
