@@ -24,6 +24,7 @@ import java.util.List;
 @DubboService(interfaceClass = UserService.class,timeout = 15000)
 public class UserServiceClientImpl extends ServiceImpl<UserMapper, User> implements UserService  {
 
+
     List<User> users = new ArrayList<>();
 
     @Override
@@ -49,5 +50,10 @@ public class UserServiceClientImpl extends ServiceImpl<UserMapper, User> impleme
     public List<User> USER_LIST() {
         list();
         return users;
+    }
+
+    @Override
+    public int Us(User user) {
+        return user.getId();
     }
 }

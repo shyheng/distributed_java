@@ -11,4 +11,5 @@ public interface UserService extends IService<User> {
     User Test(int id);
     Users USERS();
     List<User> USER_LIST();
+    int Us(User user);
 }
