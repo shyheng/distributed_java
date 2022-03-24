@@ -17,12 +17,6 @@ import java.util.Map;
 public class CodeNew {
     public static void main(String[] args) {
         Map<OutputFile, String> pathInfo = new HashMap<>();
-        pathInfo.put(OutputFile.mapper, "E:\\Distributed\\Provider\\src\\main\\java\\com\\shy\\provider\\mapper");
-        pathInfo.put(OutputFile.entity, "E:" + "\\Distributed\\Interface\\src\\main\\java\\com\\shy\\model");
-        pathInfo.put(OutputFile.service, "E:\\Distributed\\Interface\\src\\main\\java\\com\\shy\\service");
-        pathInfo.put(OutputFile.serviceImpl, "E:\\Distributed\\Provider\\src\\main\\java\\com\\shy\\provider\\serviceImpl");
-        pathInfo.put(OutputFile.controller, "E:\\Distributed\\Consumer\\src\\main\\java\\com\\shy\\consumer\\controller");
-        pathInfo.put(OutputFile.xml, "E:\\Distributed\\Provider\\src\\main\\java\\com\\shy\\provider\\mapper");
 
         FastAutoGenerator.create("jdbc:mysql://120.77.255.179:3306/log4j?serverTimezone=GMT%2B8&useSSL=true",
                 "root",
@@ -35,11 +29,11 @@ public class CodeNew {
                 })
                 .packageConfig(builder -> {
                     builder.parent("com.shy.provider") // 设置父包名
-//                            .moduleName("system") // 设置父包模块名
+                            .moduleName("day") // 设置父包模块名
                             .pathInfo(pathInfo);
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("user"); // 设置需要生成的表名
+                    builder.addInclude("day"); // 设置需要生成的表名
 //                            .addTablePrefix("t_", "c_"); // 设置过滤表前缀
                 })
                 .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
